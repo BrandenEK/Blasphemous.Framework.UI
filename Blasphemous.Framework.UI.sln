@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blasphemous.Framework.UI", "Blasphemous.Framework.UI\Blasphemous.Framework.UI.csproj", "{8F516CAB-630F-4E20-B693-257FA61B2297}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F516CAB-630F-4E20-B693-257FA61B2297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F516CAB-630F-4E20-B693-257FA61B2297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F516CAB-630F-4E20-B693-257FA61B2297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F516CAB-630F-4E20-B693-257FA61B2297}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5AA2A65D-FBB9-4A56-BA6A-C91D7376B88C}
+	EndGlobalSection
+EndGlobal
