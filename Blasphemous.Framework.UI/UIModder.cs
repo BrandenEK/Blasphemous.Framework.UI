@@ -9,7 +9,7 @@ namespace Blasphemous.Framework.UI;
 public static class UIModder
 {
     /// <summary>
-    /// Contains TMP_FontAsset objects
+    /// Contains Font objects
     /// </summary>
     public static Fonts Fonts { get; private set; } = new();
 
@@ -28,7 +28,7 @@ public static class UIModder
 }
 
 /// <summary>
-/// Contains TMP_FontAsset objects
+/// Contains Font objects
 /// </summary>
 public class Fonts
 {

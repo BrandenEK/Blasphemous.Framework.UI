@@ -3,7 +3,7 @@
 namespace Blasphemous.Framework.UI;
 
 /// <summary>
-/// Settings used when creating a new TextMeshProUGUI
+/// Settings used when creating a new Text
 /// </summary>
 public class TextCreationOptions
 {
