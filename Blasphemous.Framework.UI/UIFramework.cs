@@ -9,8 +9,18 @@ public class UIFramework : BlasMod
 {
     internal UIFramework() : base(ModInfo.MOD_ID, ModInfo.MOD_NAME, ModInfo.MOD_AUTHOR, ModInfo.MOD_VERSION) { }
 
-    protected override void OnInitialize()
+    private bool _initialized = false;
+
+    /// <summary>
+    /// Initialize the fonts and parents when first loading the main menu
+    /// </summary>
+    protected override void OnLevelLoaded(string oldLevel, string newLevel)
     {
-        LogError($"{ModInfo.MOD_NAME} has been initialized");
+        if (_initialized || newLevel != "MainMenu")
+            return;
+
+        UIModder.Fonts.Initialize();
+        UIModder.Parents.Initialize();
+        _initialized = true;
     }
 }
