@@ -32,8 +32,6 @@ public static class UIModder
 /// </summary>
 public class Fonts
 {
-    internal Font Default => Blasphemous;
-
     /// <summary> Pixelated Blasphemous font </summary>
     public Font Blasphemous { get; internal set; }
 
@@ -55,8 +53,6 @@ public class Fonts
 /// </summary>
 public class Parents
 {
-    internal Transform Default => Canvas;
-
     /// <summary> Parent of all UI </summary>
     public Transform Canvas { get; internal set; }
 
