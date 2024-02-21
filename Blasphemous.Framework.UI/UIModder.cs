@@ -53,20 +53,23 @@ public class Fonts
 /// </summary>
 public class Parents
 {
-    /// <summary> Parent of all UI </summary>
-    public Transform Canvas { get; internal set; }
+    /// <summary> UI holder at 360p </summary>
+    public Transform CanvasStandard { get; internal set; }
 
-    /// <summary> Parent of the main menu UI </summary>
-    public Transform MainMenu => Canvas?.Find("Interfaces/MainMenuWindow_prefab(Clone)");
-
-    /// <summary> Parent of the game logic UI </summary>
-    public Transform GameLogic => Canvas?.Find("InGame/InGameWindow_prefab(Clone)");
+    /// <summary> UI holder at 1080p </summary>
+    public Transform CanvasHighRes { get; internal set; }
 
     /// <summary>
     /// Locates and stores transform objects
     /// </summary>
     internal void Initialize()
     {
-        Canvas = Object.FindObjectOfType<CanvasScaler>()?.transform;
+        foreach (var canvas in Object.FindObjectsOfType<Canvas>())
+        {
+            if (canvas.name == "Game UI (No Pixel Perfect)")
+                CanvasHighRes = canvas.transform;
+            else if (canvas.name == "Game UI")
+                CanvasStandard = canvas.transform;
+        }
     }
 }

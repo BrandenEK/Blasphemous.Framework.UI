@@ -10,8 +10,8 @@ public class RectCreationOptions
     /// <summary> Default: "New Rect" </summary>
     public string Name { get; set; } = "New Rect";
 
-    /// <summary> Default: Canvas </summary>
-    public Transform Parent { get; set; } = UIModder.Parents.Canvas;
+    /// <summary> Default: Standard canvas </summary>
+    public Transform Parent { get; set; } = UIModder.Parents.CanvasStandard;
 
     /// <summary> Default: (0.5, 0.5) </summary>
     public Vector2 XRange { get; set; } = new Vector2(0.5f, 0.5f);
