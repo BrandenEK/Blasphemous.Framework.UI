@@ -17,12 +17,22 @@ namespace Blasphemous.Framework.UI
         }
 
         /// <summary>
+        /// Adds an Image component with default options
+        /// </summary>
+        public static Image AddImage(this RectTransform rect) => rect.AddImage(new ImageCreationOptions());
+
+        /// <summary>
         /// Adds a Text component with the specified options
         /// </summary>
         public static Text AddText(this RectTransform rect, TextCreationOptions options)
         {
             return rect.gameObject.AddComponent<Text>().ApplyOptions(options);
         }
+
+        /// <summary>
+        /// Adds a Text component with default options
+        /// </summary>
+        public static Text AddText(this RectTransform rect) => rect.AddText(new TextCreationOptions());
 
         internal static RectTransform ApplyOptions(this RectTransform rect, RectCreationOptions options)
         {
