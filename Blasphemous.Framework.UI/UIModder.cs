@@ -25,6 +25,11 @@ public static class UIModder
     {
         return new GameObject().AddComponent<RectTransform>().ApplyOptions(options);
     }
+
+    /// <summary>
+    /// Creates a RectTransform with default options
+    /// </summary>
+    public static RectTransform Create() => Create(new RectCreationOptions());
 }
 
 /// <summary>
