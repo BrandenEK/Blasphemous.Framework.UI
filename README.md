@@ -39,3 +39,7 @@ private void CreateImage(RectTransform holder, Sprite sprite)
     });
 }
 ```
+
+## Installation
+This mod is available for download through the [Blasphemous Mod Installer](https://github.com/BrandenEK/Blasphemous.Modding.Installer)
+- Required dependencies: Modding API
