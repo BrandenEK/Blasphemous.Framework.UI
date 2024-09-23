@@ -1,10 +1,10 @@
 # Blasphemous UI Framework
 
-<img src="https://img.shields.io/github/downloads/BrandenEK/Blasphemous.Framework.UI/total?color=6495ED&style=for-the-badge">
+<img src="https://img.shields.io/github/downloads/BrandenEK/Blasphemous.Framework.UI/total?color=39B7C6&style=for-the-badge">
 
 ---
 
-## Usage
+## Features
 - Allows other mods to easily create and modify UI elements using the UIModder
 
 ## Development
