@@ -15,6 +15,7 @@ namespace Blasphemous.Framework.UI
                 .SetColor(options.Color)
                 .SetFontSize(options.FontSize)
                 .SetAlignment(options.Alignment)
+                .SetRichText(options.UseRichText)
                 .SetWrapping(options.WordWrap)
                 .SetFont(options.Font);
         }
@@ -44,6 +45,13 @@ namespace Blasphemous.Framework.UI
         public static Text SetAlignment(this Text text, TextAnchor alignment)
         {
             text.alignment = alignment;
+            return text;
+        }
+
+        /// <summary> Updates the rich text mode </summary>
+        public static Text SetRichText(this Text text, bool useRichText)
+        {
+            text.supportRichText = useRichText;
             return text;
         }
 
