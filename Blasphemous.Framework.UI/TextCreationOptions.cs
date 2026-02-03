@@ -20,6 +20,9 @@ public class TextCreationOptions
     public TextAnchor Alignment { get; set; } = TextAnchor.MiddleCenter;
 
     /// <summary> Default: false </summary>
+    public bool UseRichText { get; set; } = false;
+
+    /// <summary> Default: false </summary>
     public bool WordWrap { get; set; } = false;
 
     /// <summary> Default: Blasphemous </summary>

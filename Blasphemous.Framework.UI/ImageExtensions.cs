@@ -12,6 +12,7 @@ namespace Blasphemous.Framework.UI
         {
             image.sprite = options.Sprite;
             image.color = options.Color;
+            image.type = options.Type;
             return image;
         }
 
@@ -26,6 +27,13 @@ namespace Blasphemous.Framework.UI
         public static Image SetColor(this Image image, Color color)
         {
             image.color = color;
+            return image;
+        }
+
+        /// <summary> Updates the type </summary>
+        public static Image SetType(this Image image, Image.Type type)
+        {
+            image.type = type;
             return image;
         }
     }

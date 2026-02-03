@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace Blasphemous.Framework.UI;
 
@@ -12,4 +13,7 @@ public class ImageCreationOptions
 
     /// <summary> Default: White </summary>
     public Color Color { get; set; } = Color.white;
+
+    /// <summary> Default: Simple </summary>
+    public Image.Type Type { get; set; } = Image.Type.Simple;
 }
